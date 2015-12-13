@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Галерея</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="js/gallery.js"></script>
+
+    <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+<body>
+<header>
+    <ul>
+        <li><span><a data-scroll href="http://anastasiiaparfenova.github.io" class="pure-menu-link">Главная</a></span></li>
+        <li><span><a data-scroll href="http://anastasiiaparfenova.github.io/#me" class="pure-menu-link">Обо мне</a></span></li>
+        <li><span><a data-scroll href="http://anastasiiaparfenova.github.io/#interesting" class="pure-menu-link">Интересное</a></span></li>
+        <li><span><a data-scroll href="http://anastasiiaparfenova.github.io/#contacts" class="pure-menu-link">Контакты</a></span></li>
+    </ul>
+</header>
+<main id="main">
+    <div class="section categories" id="gallery-main">
+        <div class="container">
+            <h3 class="section-heading">Галерея</h3>
+            <div class="row">
+                <div class="three columns  category">
+                    <img class="u-max-full-width" onclick="genFullPic(null, this)" src="images/foto1.JPG" alt="foto1"
+                         data-full-pic="images/foto1.JPG">
+                </div>
+                <div class="three columns  category">
+                    <img class="u-max-full-width"  onclick="genFullPic(null, this)" src="images/foto2.JPG" alt="foto2"
+                         data-full-pic="images/foto2.JPG">
+                </div>
+                <div class="three columns  category">
+                    <img class="u-max-full-width" onclick="genFullPic(null, this)" src="images/foto3.jpg" alt="foto3"
+                         data-full-pic="images/foto3.jpg">
+                </div>
+                <div class="three columns  category">
+                    <img class="u-max-full-width" onclick="genFullPic(null, this)" src="images/foto4.JPG" alt="foto4"
+                         data-full-pic="images/foto4.JPG">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="three columns  category">
+                    <img class="u-max-full-width"  onclick="genFullPic(null, this)" src="images/foto5.JPG" alt="foto5"
+                         data-full-pic="images/foto5.JPG">
+                </div>
+                <div class="three columns  category">
+                    <img class="u-max-full-width" onclick="genFullPic(null, this)" src="images/foto6.JPG" alt="foto6"
+                         data-full-pic="images/foto6.JPG">
+                </div>
+                <div class="three columns  category">
+                    <img class="u-max-full-width" onclick="genFullPic(null, this)" src="images/foto7.JPG" alt="foto7"
+                         data-full-pic="images/foto7.JPG">
+                </div>
+                <div class="three columns  category">
+                    <img class="u-max-full-width" onclick="genFullPic(null, this)" src="images/foto8.JPG" alt="foto8"
+                         data-full-pic="images/foto8.JPG">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="three columns  category">
+                    <img class="u-max-full-width" onclick="genFullPic(null, this)" src="images/foto9.jpg" alt="foto9"
+                         data-full-pic="images/foto9.jpg">
+                </div>
+                <div class="three columns  category">
+                    <img class="u-max-full-width"  onclick="genFullPic(null, this)" src="images/foto10.JPG" alt="foto10"
+                         data-full-pic="images/foto10.JPG">
+                </div>
+                <div class="three columns  category">
+                    <img class="u-max-full-width"  onclick="genFullPic(null, this)" src="images/foto11.JPG" alt="foto11"
+                         data-full-pic="images/foto11.JPG">
+                </div>
+                <div class="three columns  category">
+                    <img class="u-max-full-width"  onclick="genFullPic(null, this)" src="images/foto12.JPG" alt="foto12"
+                         data-full-pic="images/foto12.JPG">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blanket" id="blanket" onclick="exitModuleScreen()"></div>
+    <div class="info" id="info">
+        <p>
+            Справка:
+        </p>
+        <ul>
+            <li>Для вызова справки нажмите F1</li>
+            <li>Для просмотра фото нажмите на него</li>
+            <li>Для возврата ко всем фотографиям нажмите esc или щелкните по фону</li>
+        </ul>
+    </div>
+</main>
+<script>
+    domReady();
+</script>
+</body>
+</html>
